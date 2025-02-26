@@ -2,13 +2,17 @@ import java.util.Scanner;
 
 public class Armstrong_fuction {
     public static void main(String[] args) {
+        System.out.println("Armstrong Numbers are : ");
+        int count=0;
+        for(int i = 1;i<1000;i++){
 
-        Scanner scan = new Scanner(System.in);
-        System.out.print("enter a number:");
-        int num = scan.nextInt();
-        printResult(num);
-
-
+            if(isArmstrong(i)){
+                System.out.println(i);
+                count++;
+            }
+        }
+        System.out.println();
+        System.out.println("There are "+count+" Armstrong numbers");
     }
 
     public static boolean isArmstrong(int num) {
@@ -30,14 +34,5 @@ public class Armstrong_fuction {
         }
 
         return sum == num;
-    }
-
-    public static void printResult(int num) {
-        if (isArmstrong(num)) {
-            System.out.println(num + " is a Armstrong number");
-
-        } else {
-            System.out.println(num + " not a armstrong number");
-        }
     }
 }
