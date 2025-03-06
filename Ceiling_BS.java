@@ -9,7 +9,7 @@ public class Ceiling_BS {
     static int celing(int[] arr,int target){
         int start = 0;
         int end = arr.length-1;
-        while(start<end){
+        while(start<=end){
             int mid = start+(end - start)/2;
             if(arr[mid]==target){
                 return mid;
@@ -21,6 +21,6 @@ public class Ceiling_BS {
                 start=mid+1;
             }
         }
-        return arr[start+1];
+        return arr[start];
     }
 }
