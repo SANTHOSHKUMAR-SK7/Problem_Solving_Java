@@ -7,10 +7,10 @@ public class BankAccount {
     public String accountType = "Savings";
 
     public void showDetails() {
-        System.out.println("Balance: " + balance); // ✅ Accessible inside class
-        System.out.println("Account Number: " + accountNumber); // ✅ Default - Same package only
-        System.out.println("Bank Name: " + bankName); // ✅ Protected - Accessible in subclass
-        System.out.println("Account Type: " + accountType); // ✅ Public - Accessible everywhere
+        System.out.println("Balance: " + balance); //  Accessible inside class
+        System.out.println("Account Number: " + accountNumber); //  Default - Same package only
+        System.out.println("Bank Name: " + bankName); //  Protected - Accessible in subclass
+        System.out.println("Account Type: " + accountType); //  Public - Accessible everywhere
     }
 }
 
