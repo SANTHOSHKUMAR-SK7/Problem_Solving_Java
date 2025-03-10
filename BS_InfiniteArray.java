@@ -17,7 +17,6 @@ public class BS_InfiniteArray {
             binary(arr,target,start,end);
         }
     }
-
     static void binary(int[] arr , int target,int start,int end){
         while(start<end){
             int mid = start + (end - start)/2;
