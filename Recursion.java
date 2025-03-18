@@ -3,7 +3,7 @@ public class Recursion {
         msg();
         System.out.println();
         msg1();
-     }
+    }
     static void msg(){
         System.out.println("hai");
         msg1();
