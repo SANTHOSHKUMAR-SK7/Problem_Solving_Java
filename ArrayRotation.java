@@ -7,6 +7,7 @@ public class ArrayRotation {
             System.out.println(arr[i]+" ");
         }
     }
+
     static void rotate(int[] arr,int rot){
             int len = arr.length;
             int k = rot % len;
