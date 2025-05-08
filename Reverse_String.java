@@ -1,16 +1,26 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
 public class Reverse_String {
     public static void main(String[] args) {
 //
 //        Method 1
         Scanner input = new Scanner(System.in);
+        StringBuilder sk =new StringBuilder();
         System.out.print("Enter the String : ");
         char[] c=input.nextLine().toCharArray();
         System.out.print("The reversed String is : ");
         for(int i=c.length-1;i>=0;i--){
             System.out.print(c[i]);
         }
+        String s= "sk";
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(2);
+        arr.add(2);
+        arr.set(1,4);
+        System.out.println(arr);
+        char[] ch =s.toCharArray();
+        System.out.println("");
+        System.out.println(ch[0]);
 //
 //        //Method 2
 //
