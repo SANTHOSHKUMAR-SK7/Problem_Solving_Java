@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class SprialTraversalMatrix {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -11,6 +9,7 @@ public class SprialTraversalMatrix {
         int RowUp= matrix.length-1;
         int ColUp=matrix[0].length-1;
         int ColLow=0;
+        
 
         while (RowLow<=RowUp && ColLow<=ColUp) {
 
@@ -37,7 +36,7 @@ public class SprialTraversalMatrix {
 
             //BOTTOM TO UP
             if(RowUp>RowLow){
-                for(int i=RowUp;i>=RowUp;i++){
+                for(int i=RowUp;i>=RowLow;i++){
                     System.out.print(matrix[i][ColLow] + " ");
                 }
                 ColLow++;

@@ -14,6 +14,7 @@ import java.util.Queue;
         queue.add(6);
 
         System.out.println(queue.peek()); //Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.Returns: the head of this queue, or null if this queue is empty
+        // Retrives, only we can view, we cant delete the elements.
         System.out.println(queue.remove());
         System.out.println(queue.remove());
     }
