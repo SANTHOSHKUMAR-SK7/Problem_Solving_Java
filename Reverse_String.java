@@ -1,10 +1,13 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+
 public class Reverse_String {
     public static void main(String[] args) {
+        System.out.println(strStr("sadbutsad", "but"));
+    }
 //
 //        Method 1
-        Scanner input = new Scanner(System.in);
+       /* Scanner input = new Scanner(System.in);
         StringBuilder sk =new StringBuilder();
         System.out.print("Enter the String : ");
         char[] c=input.nextLine().toCharArray();
@@ -20,7 +23,8 @@ public class Reverse_String {
         System.out.println(arr);
         char[] ch =s.toCharArray();
         System.out.println("");
-        System.out.println(ch[0]);
+        System.out.println(ch[0]);*/
+
 //
 //        //Method 2
 //
@@ -59,5 +63,15 @@ public class Reverse_String {
 //        }
 //
 //
+
+    static int strStr(String haystack, String needle) {
+        int ans = -1;
+       int index=haystack.indexOf(needle);
+       if(index!=-1){
+           ans=index;
+       }
+
+        return ans;
     }
 }
+
