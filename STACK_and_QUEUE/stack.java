@@ -5,6 +5,8 @@ import java.util.Stack;
 public class stack {
     public static void main(String[] args) {
         Stack<Integer> stack=new Stack<>();
+        CustomStackImplementation cs=new CustomStackImplementation();
+        cs.push(5);
         stack.push(1);
         stack.push(2);
         stack.push(3);

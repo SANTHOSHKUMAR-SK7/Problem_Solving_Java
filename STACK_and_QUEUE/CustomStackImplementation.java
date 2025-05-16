@@ -1,43 +1,48 @@
 package STACK_and_QUEUE;
 
 public class CustomStackImplementation {
-    protected int[] data;
-    private static final int DEFAULT_SIZE=15;
-    int ptr=-1;//Initially its at -1,when the new value is added it increase the pointer
 
-    public CustomStackImplementation(int size){
-        this.data=new int[size];  // When size is passed through the constructor, it creates new int array of size passing
-    }
+  protected int[] data;
+  private static final int D_SIZE=10;
+  int ptr=-1;
 
-    public CustomStackImplementation(){
-        this(DEFAULT_SIZE); //When nothing is passed, it should use of default size
-    }
+  public CustomStackImplementation(int size){
+      this.data=new int[size];
+  }
 
-    private boolean isFull(){
-        return ptr==data.length-1; //Here ptr is at last index
-    }
+  public CustomStackImplementation(){
+      this(D_SIZE);
+  }
 
-    private boolean isEmpty(){
-        return ptr==-1;
-    }
+  public boolean isFull(){
+      return ptr==data.length-1;
+  }
 
-    public boolean push(int val){
-        if(isFull()){
-            System.out.println("Stack is full...!");
-            return false;
-        }
-        ptr++;
-        data[ptr]=val;
-        return true;
-    }
+  public boolean isEmpty(){
+      return ptr==-1;
+  }
 
-    public int remove() throws Exception{
-        if(isEmpty()){
-            throw new Exception("Itz Empty");
-        }
-        return data[ptr--];
-    }
+  public boolean push(int item){
+      if(isFull()){
+          System.out.println("Hey!!Stack is full..!");
+          return false;
+      }
+      data[++ptr]=item;
+      return true;
+  }
 
-//    public
+  public int pop() throws CustomException{
+      if(isEmpty()){
+          throw new CustomException("Stack is Empty....!");
+      }
+      return data[ptr--];
+  }
+
+  public int peek() throws CustomException{
+      if(isEmpty()){
+          throw new CustomException("Stack is Empty...!");
+      }
+      return data[ptr];
+  }
 
 }
